@@ -1,0 +1,77 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #131212;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid white;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.form-signin input[type="text"] {
+  margin-bottom: 10px;
+  border-radius: 0.5rem;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+}
+.form-signin input[type="text"]:hover{
+   box-shadow: 5px 5px #f76868;
+   border: none;
+    transition: ease-in-out 0.3s;
+}
+.form-signin input[type="email"]:hover{
+    box-shadow: 5px 5px #f76868;
+   border: none;
+    transition: ease-in-out 0.3s;
+}
+
+.form-signin input[type="text"]:focus
+{   outline: 0;
+    background-color: #c2c2c2;
+    box-shadow: none !important;
+    color: black;}
+
+    .form-signin input[type="email"]:focus{
+        outline: 0;
+        background-color:#c2c2c2;
+        box-shadow: none !important;
+        color: black;
+    }
+.btn1:focus{
+  outline: 0;
+        box-shadow: none !important;
+}
+.btn1:hover{
+  box-shadow: 2px 2px rgb(192, 188, 188);
+}
