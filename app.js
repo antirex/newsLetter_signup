@@ -41,8 +41,10 @@ app.post("/", function (req, res) {
   const request = https.request(url, options, function (response) {
     if (response.statusCode === 200) {
       res.sendFile(__dirname + "/success.html");
+      console.log('Successfully authenticated');
     } else {
       res.sendFile(__dirname + "/failure.html");
+      console.log('Failed to authenticate');
     }
 
     response.on("data", function (data) {
@@ -54,5 +56,5 @@ app.post("/", function (req, res) {
 });
 
 app.listen(process.env.PORT || 3000, function () {
-  console.log("your server is live at port 3000!");
+  console.log("Live at port 3000");
 });
