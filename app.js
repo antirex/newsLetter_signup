@@ -7,6 +7,7 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));//to help embed the custom css and images files....shud be stored in a part folder:public
 
+//next
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/signup.html");
 });
